@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LRU Cache Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LRU Cache Manager</h1>
+            <p class="subtitle">Least Recently Used Cache with O(1) Operations</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <div class="input-group">
+                    <label for="keyInput">Key:</label>
+                    <input type="number" id="keyInput" placeholder="Enter key" />
+                </div>
+
+                <div class="input-group">
+                    <label for="valueInput">Value:</label>
+                    <input type="number" id="valueInput" placeholder="Enter value" />
+                </div>
+
+                <div class="button-group">
+                    <button id="putBtn" class="btn btn-primary">PUT</button>
+                    <button id="getBtn" class="btn btn-secondary">GET</button>
+                </div>
+            </section>
+
+            <section class="output-section">
+                <div class="result-container">
+                    <h2>Result:</h2>
+                    <div id="result" class="result-box">
+                        <p class="placeholder">Perform an operation to see results</p>
+                    </div>
+                </div>
+
+                <div class="cache-container">
+                    <h2>Cache State:</h2>
+                    <div id="cacheDisplay" class="cache-box">
+                        <p class="placeholder">Cache updates automatically</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info-section">
+                <h3>How it works:</h3>
+                <ul>
+                    <li><strong>PUT:</strong> Insert or update a key-value pair in the cache</li>
+                    <li><strong>GET:</strong> Retrieve a value by key. Returns -1 if key not found</li>
+                    <li>Cache capacity is 5. When full, the least recently used item is removed</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>LRU Cache Mini Project | Time Complexity: O(1) for all operations</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
